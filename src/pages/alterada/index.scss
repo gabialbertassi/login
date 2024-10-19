@@ -1,0 +1,102 @@
+.pagina-home {
+    margin: 0px;
+    padding: 10px;
+    background-color: #CAB1AC;
+
+    .login {
+        margin: 70px;
+        padding: 100px;
+        width: 800px;
+        padding-top: 75px;
+        padding-bottom: 75px;
+        background-color: #e5d8d6;
+        box-shadow: 0px 0px 10px 2px rgb(195, 193, 193);
+        margin-left: 250px;
+    }
+
+    .IMG {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .BV {
+            font-family: 'Jacques Francois';
+            font-size: xx-large;
+        }
+    }
+
+
+
+    .botom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 275px;
+        margin-top: 50px;
+        background: #2c2c2c;
+        border-radius: 6px;
+        width: 250px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        text-decoration: none;
+        position: relative;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s ease, box-shadow 0.3s ease; // Adicionando transição para box-shadow
+    
+        a {
+            color: #fff;
+        }
+    
+        &:hover {
+            background: #1d1d1c; // Altera a cor de fundo
+            box-shadow: 0 0 10px #1d1d1c, // Sombra externa
+                        0 0 15px #1d1d1c; // Sombra interna
+        }
+    }
+
+   
+    
+    // Responsividade
+    @media (max-width: 768px) { // Tablets e telas menores
+        .login {
+            width: 90%; // Torna o login responsivo
+            margin: 30px auto; // Centraliza o login
+            padding: 60px 20px; // Ajusta o padding
+        }
+
+        .campo {
+            width: 100%; // Campo ocupa toda a largura
+            input {
+                width: 100%; // Input ocupa toda a largura do campo
+                margin-left: 0; // Remove margem esquerda
+            }
+        }
+
+        .botom {
+            width: 80%; // Botão ocupa 80% da tela
+            margin: 30px auto; // Centraliza o botão
+        }
+
+        .esqueceu {
+            margin: 0 20px; // Ajusta margens
+        }
+    }
+
+    @media (max-width: 480px) { // Dispositivos móveis
+        .login {
+            padding: 40px 10px; // Reduz o padding
+        }
+
+        .campo {
+            input {
+                font-size: 14px; // Diminui o tamanho da fonte
+            }
+        }
+
+        .botom {
+            width: 90%; // Ajusta a largura do botão
+        }
+    }
+}

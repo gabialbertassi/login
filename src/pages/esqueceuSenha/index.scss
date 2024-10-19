@@ -1,0 +1,142 @@
+.pagina-esqueceuSenha {
+    margin: 0px;
+    padding: 10px;
+    background-color: #CAB1AC;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .login {
+        margin: 70px;
+        padding: 100px;
+        width: 800px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        background-color: #e5d8d6;
+        box-shadow: 0px 0px 10px 2px rgb(195, 193, 193);
+        margin-left: 250px;
+    } 
+
+    .pa{
+        display: flex;
+        justify-content: left;
+        margin-right: 260px;
+    }
+
+    .IMG {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .BV {
+            font-family: 'Jacques Francois';
+            font-size: xx-large;
+        }
+    }
+
+    .campo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        margin-bottom: 12px;
+
+        input {
+            margin-left: 560px;
+            font-size: 16px;
+            padding: 6px;
+            margin-top: 8px;
+            width: 400px;
+            border-radius: 8px;
+            border: none;  // Corrigido para border: none
+            padding-left: 15px;
+            box-shadow: 0px 0px 10px 2px rgb(195, 193, 193);
+            outline: none;  // Adicionado para remover a borda preta
+            transition: box-shadow 0.3s ease;  // Transição suave para a sombra
+        }
+
+
+        input:focus {
+            box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2); // Efeito de foco
+            // Adicione outras propriedades conforme desejado
+        }
+    }
+
+
+    .botom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 275px;
+        margin-top: 50px;
+        background: #2c2c2c;
+        border-radius: 6px;
+        width: 250px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        text-decoration: none;
+        position: relative;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s ease, box-shadow 0.3s ease; // Adicionando transição para box-shadow
+    
+        a {
+            color: #fff;
+        }
+    
+        &:hover {
+            background: #1d1d1c; // Altera a cor de fundo
+            box-shadow: 0 0 10px #1d1d1c, // Sombra externa
+                        0 0 15px #1d1d1c; // Sombra interna
+        }
+    }
+
+    }
+
+    // Responsividade
+@media (max-width: 768px) { // Para tablets e telas menores
+    .pagina-esqueceuSenha {
+        .login {
+            width: 90%; // Ajusta o login para 90% da largura
+            margin: 30px auto; // Centraliza o login na tela
+            padding: 60px 20px; // Ajusta o padding para telas menores
+        }
+
+        .pa {
+            justify-content: center; // Centraliza o texto nas telas menores
+            margin-right: 0; // Remove a margem para alinhamento
+        }
+
+        .campo {
+            width: 100%; // A largura do campo será 100% em telas menores
+            input {
+                width: 100%; // Input ocupa toda a largura disponível
+                margin-left: 0; // Remove a margem esquerda
+            }
+        }
+
+        .botom {
+            width: 80%; // O botão ocupa 80% da largura
+            margin: 30px auto; // Centraliza o botão na tela
+        }
+    }
+}
+
+@media (max-width: 480px) { // Para dispositivos móveis
+    .pagina-esqueceuSenha {
+        .login {
+            padding: 40px 10px; // Reduz o padding para dispositivos móveis
+        }
+
+        .campo {
+            input {
+                font-size: 14px; // Diminui o tamanho da fonte
+            }
+        }
+
+        .botom {
+            width: 90%; // Ajusta a largura do botão
+        }
+    }
+}
